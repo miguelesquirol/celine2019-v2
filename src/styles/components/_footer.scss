@@ -1,0 +1,38 @@
+footer {
+
+  .first {
+    background: $red-light;
+    text-transform: uppercase;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    h2 {
+      color: #fff;
+      span {
+        color: $red-dark;
+      }
+    }
+  }
+  .second {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: $red-dark;
+    display: flex;
+    align-items: center;
+    p {
+      margin: 0px;
+    }
+    a {
+      color: #ffffff;
+      font-size: 23px;
+      &:hover {
+        color: #febc11;
+      }
+
+    }
+  }
+
+
+
+}

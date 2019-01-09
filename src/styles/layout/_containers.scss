@@ -1,0 +1,24 @@
+.logos {
+    background: $background-dark;
+    padding:20px 0px;
+}
+
+.text {
+    padding:50px;
+    background: $background-light;
+    p,
+    h1 {
+        color: $black;
+        text-align:center;
+    }
+    
+    h1 {
+        font-size: 29px;
+    }
+    
+    p {
+        font-size: 18px;
+        margin-top:40px;
+    }
+
+}

@@ -1,0 +1,53 @@
+header {
+
+    .background {
+        background-image:url(#{$path-image}/bg.jpg);
+        padding: calc(50vh - 153px) 0;
+        background-size: cover;
+    }
+
+    svg {
+        width: 280px;
+        height: 300px;
+    }
+    path {
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation: dash 8s linear forwards;
+        animation-delay: 1s;
+        -webkit-animation-delay: 2s;
+    }
+    @keyframes dash {
+        to {
+            stroke-dashoffset: 0;
+        }
+    }
+    .logo {
+        position: relative;
+        width: 300px;
+        margin: 0 auto;
+
+        h3 {
+            color: #fff;
+            position: absolute;
+            right: 35px;
+            top: 3px;
+            font-size: 32px;
+        }
+        h1 {
+            color: #fff;
+            font-size: 56px;
+            left: 71px;
+            position: absolute;
+            top: 80px;
+        }
+        h2 {
+            color: rgba(9, 5, 6, 0.62);
+            font-size: 55px;
+            left: 78px;
+            position: absolute;
+            top: 145px;
+        }
+    }
+
+}

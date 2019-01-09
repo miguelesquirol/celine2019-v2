@@ -1,0 +1,45 @@
+{% extends '../layouts/default.twig' %}
+{% set head_title = 'Celine Bonte Portfolio' %}
+{% set body_class = '' %}
+
+{% block page %}
+
+  <header>
+
+    <div class="container-fluid background">
+
+
+
+      <div class="logo">
+        <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="66.375px" height="63.125px" viewBox="0 0 66.375 63.125" enable-background="new 0 0 66.375 63.125" xml:space="preserve">
+                        <g>
+                          <g>
+                            <g>
+                              <path fill="none" stroke="#FFFFFF" stroke-width="0.5" stroke-miterlimit="10" d="M64.125,2 64.125,61 3.875,61 3.875,2 
+                                35.875,2      "/>
+                            </g>
+                          </g>
+                        </g>
+                        </svg>
+        <H3>DESIGN</h3>
+        <h1>CÉLINE</h1>
+        <h2>BONTE</h2>
+      </div>
+
+
+
+    </div>
+
+
+  </header>
+
+
+
+  {% include '../components/introduction.twig' %}
+
+
+  {% include '../components/logos.twig' %}
+
+
+
+{% endblock %}
