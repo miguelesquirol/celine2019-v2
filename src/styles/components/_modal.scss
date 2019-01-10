@@ -1,34 +1,38 @@
 .modal {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  .modal-dialog {
+    margin: 0;
+    width: 100%;
+    padding: 0;
+    max-width: 100%;
+    position: absolute;
+    left: 0px;
+  }
+  .modal-content {
+    min-height: 100vh;
+    .modal-body {
+      padding: 0;
+    }
+  }
+  .modal-body {
+    img {
+      transition: $transition-base;
+      &:hover {
+        opacity: 0.6;
+        transition: $transition-base;
+      }
+    }
+  }
+  .close {
     position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-
-
-    .modal-dialog {
-        margin: 0;
-        width: 100%;
-        padding: 0;
-        max-width: 100%;
-    }
-
-    .modal-content {
-        min-height: 100vh;
-
-        .modal-body {
-            padding: 0px;
-
-        }
-    }
-
-    .close {
-        position: fixed;
-        top: 20px;
-        right: 20px;
-        z-index: 20;
-        font-size: 50px;
-    }
-
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+    font-size: 50px;
+  }
 }

@@ -5,26 +5,6 @@
  * Ideally, this is empty.
  */
 
-/*
-  Sass Techniques
-  CSS Snippets
-*/
-
-.MyComponent {
-  $block: &;
-  $xmasTheme: #{&}--xmasTheme;
-
-  &-title {
-    #{$xmasTheme} & {}
-  }
-}
-
-/* Compiles to
-.MyComponent {}
-.MyComponent-title {}
-.MyComponent--xmasTheme .MyComponent-title {}
-*/
-
 body {
-  padding-top: 0px !important;
+  padding-top: 0 !important;
 }

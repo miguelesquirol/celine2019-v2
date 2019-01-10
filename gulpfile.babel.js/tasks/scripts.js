@@ -28,7 +28,7 @@ export function esLint() {
   return src(paths.scripts.src)
     .pipe(gulpEslint())
     .pipe(gulpEslint.format())
-    .pipe(gulpif(isProd, gulpEslint.failAfterError()))
-}
+    // .pipe(gulpif(isProd, gulpEslint.failAfterError()))
+    }
 
 export const scripts = series(esLint, esTranspile);
