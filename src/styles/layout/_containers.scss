@@ -7,15 +7,34 @@
   padding: 50px;
   background: $background-light;
   p,
-  h1 {
+  h1,
+  h2 {
     color: $black;
     text-align: center;
   }
   h1 {
     font-size: 29px;
   }
+  h2 {
+    font-size: 27px;
+    margin-bottom: 2px;
+    margin-top: 40px;
+  }
   p {
     font-size: 18px;
     margin-top: 40px;
+  }
+  .pdflink {
+    display: flex;
+    justify-content: center;
+  }
+  .pdf {
+    color: $red_dark;
+    padding: 0px 20px;
+    cursor: pointer;
+    &:hover {
+      color: $red-light;
+      text-decoration: none;
+    }
   }
 }
