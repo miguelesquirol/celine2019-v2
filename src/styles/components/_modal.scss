@@ -11,7 +11,7 @@
     padding: 0;
     max-width: 100%;
     position: absolute;
-    left: 0px;
+    left: 0;
   }
   .modal-content {
     min-height: 100vh;
@@ -23,7 +23,7 @@
     img {
       transition: $transition-base;
       &:hover {
-        opacity: 0.6;
+        opacity: .6;
         transition: $transition-base;
       }
     }
