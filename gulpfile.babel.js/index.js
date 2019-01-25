@@ -2,11 +2,9 @@
  * @title gulpfile.babel.js
  * @description A directory file loader to include all the gulp tasks
  */
-
 // Dependencies
 import gulp from 'gulp';
 import { series, parallel } from 'gulp';
-
 // Tasks
 import { reload, serve } from './tasks/server';
 import { clean } from './tasks/clean';
@@ -17,10 +15,8 @@ import { images } from './tasks/images';
 import { fonts } from './tasks/fonts';
 import { copy } from './tasks/copy';
 import { deploy } from './tasks/deploy';
-
 // Config
 import { paths } from './config';
-
 // Gulp Tasks
 function watchFiles() {
   gulp.watch([paths.styles.watch, paths.styles.modules], styles);
@@ -29,25 +25,9 @@ function watchFiles() {
   gulp.watch(paths.images.src, series(images, reload));
   gulp.watch(paths.fonts.src, series(fonts, reload));
 }
-
-export const build = series(
-  clean,
-  parallel(styles, scripts, templates, images, fonts, copy)
-);
-
-export const dev = series(
-  build,
-  serve,
-  watchFiles
-);
-
-export const devWatch = series(
-  serve,
-  watchFiles
-);
-
+export const build = series(clean, parallel(styles, scripts, templates, images, fonts, copy));
+export const dev = series(build, serve, watchFiles);
+export const devWatch = series(serve, watchFiles);
 exports.deploy = deploy;
-
 exports.watch = devWatch;
-
 export default dev;

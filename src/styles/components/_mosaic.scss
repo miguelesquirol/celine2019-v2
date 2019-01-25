@@ -1,0 +1,22 @@
+.mosaic {
+  background: $red-dark;
+  a:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    transition: ease .5s all;
+    img {
+      opacity: .6;
+      transition: ease .5s all;
+    }
+    &:before {
+      content: "+";
+      position: absolute;
+      color: #fff;
+      font-size: 140px;
+      z-index: 10;
+      transition: ease .5s all;
+    }
+  }
+}
